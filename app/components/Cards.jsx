@@ -20,7 +20,7 @@ const Cards = () => {
         }
     ]
     return ( 
-        <div className="grid grid-cols-3 gap-5 w-3/4 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-3/4 ">
         {
             cardItems.map((value, index) => {
                 return(
@@ -31,10 +31,10 @@ const Cards = () => {
                                 <h4 className="text-3xl font-bold">{value.name}</h4>
                             </div>
                             
-                            <p>{value.text}</p>
+                            <p className="">{value.text}</p>
                         </div>
                         <div className="flex items-end">
-                            <img className="w-full h-{160px} " src={value.img} alt="" />
+                            <img className="w-full h-160 " src={value.img} alt="" />
                         </div>
                         
                     </div>
