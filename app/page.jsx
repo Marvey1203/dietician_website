@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import ContactSection from "./components/ContactSection";
 import InvestmentSection from "./components/InvestmentSection";
 import DietitianSection from "./components/DietitianSection";
+import AboutMe from "./components/AboutMe";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <HealthNutricion/>
       <InvestmentSection/>
       <DietitianSection/>
+      <AboutMe/>
       <ContactSection/>
     </div>
   )
