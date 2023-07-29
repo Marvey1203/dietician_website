@@ -14,6 +14,9 @@ module.exports = {
       },
       height: {
         '160': '10rem',
+      },
+      colors: {
+        newGreen: '#00412A',
       }
     },
   },
