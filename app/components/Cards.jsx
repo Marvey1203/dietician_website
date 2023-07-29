@@ -34,7 +34,7 @@ const Cards = () => {
                             <p className="">{value.text}</p>
                         </div>
                         <div className="flex items-end">
-                            <img className="w-full h-160 " src={value.img} alt="" />
+                            <img className="w-full" src={value.img} alt="" />
                         </div>
                         
                     </div>
