@@ -17,6 +17,9 @@ module.exports = {
       },
       colors: {
         newGreen: '#00412A',
+      },
+      fontFamily: {
+        primary: 'Plus Jakarta Sans'
       }
     },
   },
