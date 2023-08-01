@@ -4,6 +4,8 @@ import ContactSection from "./components/ContactSection";
 import InvestmentSection from "./components/InvestmentSection";
 import DietitianSection from "./components/DietitianSection";
 import AboutMe from "./components/AboutMe";
+import MissionStatement from "./components/MissionStatement";
+import MoreAbout from "./components/MoreAbout";
 
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <InvestmentSection/>
       <DietitianSection/>
       <AboutMe/>
+      <MissionStatement/>
+      <MoreAbout/>
       <ContactSection/>
     </div>
   )

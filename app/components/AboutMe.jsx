@@ -24,7 +24,7 @@ const AboutMe = () => {
                 </p>
                 <div className="flex flex-row gap-1 justify-center items-center py-10">
                     <div className="w-[80%] h-[2px] bg-black"></div>
-                    <h2 className=" w-full text-4xl font-bold w-full text-center uppercase font-primary">Sprecial Interest</h2>
+                    <h2 className=" w-full text-4xl font-bold text-center uppercase font-primary">Sprecial Interest</h2>
                     <div className="w-[80%] h-[2px] bg-black"></div>
                 </div>
                 <p className="text-center text-[29px] py-10 font-primary">
