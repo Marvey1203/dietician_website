@@ -1,4 +1,20 @@
+"use client"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const ContactSection = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
     return ( 
         <div className="w-full flex flex-row">
             <div className="flex flex-col border w-1/3 justify-center px-12 gap-2 border-black py-10">
@@ -15,8 +31,27 @@ const ContactSection = () => {
             </div>
             <div className="w-2/3 flex flex-col border border-black">
                 <div className="h-6/10 flex flex-row gap-2 border border-black p-5">
-                    <form>
-                        <input type="text" placeholder="Name"  />
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-row">
+                        <div className="flex flex-col">
+                            <label>Name</label>
+                            <input type="text" name="user_name" placeholder='*Name' required />
+                            <label>Email</label>
+                            <input type="email" name="user_email" placeholder='*Email' required />
+                            <label>Message</label>
+                            <textarea name="message" placeholder='Your message' required />
+                        </div>
+                        <div className="flex flex-col">
+                            <label>Contact number</label>
+                            <input type="tel" name="user_number" />
+                            <label>Interested in</label>
+                            <select name="interested" id="id">
+                                <option value="diet">diet</option>
+                                <option value="gym">gym</option>
+                            </select>
+                            <input type="submit" value="Send" />
+                        </div>
+                        
+                        
                     </form>
 
                 </div>
