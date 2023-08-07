@@ -17,7 +17,7 @@ const ContactSection = () => {
       };
 
     return ( 
-        <div className="w-full flex lg:flex-row flex-col">
+        <div className="w-full flex lg:flex-row flex-col" id="contact">
             <div className="flex flex-col border w-full lg:w-1/3 justify-center px-12 gap-2 border-black py-10">
                 <h4 className="text-4xl font-semibold">Contact</h4>
                 <div className="pl-4">

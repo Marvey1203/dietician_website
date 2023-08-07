@@ -1,6 +1,10 @@
+import Link from "next/link";
+
 const ButtonsConsoltation = () => {
-    return ( 
-        <button className="text-3xl underline">Book a consultation</button>
+    return (
+        <Link href="/#contact">
+            <button className="md:text-3xl text-2xl underline">Book a consultation</button>
+        </Link>
      );
 }
  
