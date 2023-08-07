@@ -7,11 +7,11 @@ const DietitianSection = () => {
                 <img className="w-full" src="/bowlimg.svg" alt="Images of healthy food" />
             </div>
             <div className="w-3/4 py-10 flex flex-col gap-4">
-                <div className="flex flex-row justify-between gap-4 ">
-                    <h3 className="font-semibold text-6xl w-[70%]">WHY IS IT IMPORTANT TO SEE A REGISTERED DIETITIAN?</h3>
+                <div className="flex flex-col lg:flex-row justify-between gap-4 ">
+                    <h3 className="font-semibold text-4xl md:text-5xl lg:text-6xl w-full lg:w-[70%]">WHY IS IT IMPORTANT TO SEE A REGISTERED DIETITIAN?</h3>
                     <div className="flex flex-row gap-2 justify-start items-start ">
                         <img className="w-[8.3rem] h-[8.3rem]" src="/heartIcon.png" alt="Icon of a green heart" />
-                        <img className="w-{8rem] h-[8rem]" src="/apple.png" alt="Icon of a golden apple" />
+                        <img className="w-[8rem] h-[8rem]" src="/apple.png" alt="Icon of a golden apple" />
                     </div>
                     
                     

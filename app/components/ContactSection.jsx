@@ -7,17 +7,18 @@ const ContactSection = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_o1qb9cg', 'template_efjszy6', form.current, 'cku0au9LhJiZ6I12D')
           .then((result) => {
               console.log(result.text);
+              document.getElementById('contact-form').reset()
           }, (error) => {
               console.log(error.text);
           });
       };
 
     return ( 
-        <div className="w-full flex flex-row">
-            <div className="flex flex-col border w-1/3 justify-center px-12 gap-2 border-black py-10">
+        <div className="w-full flex lg:flex-row flex-col">
+            <div className="flex flex-col border w-full lg:w-1/3 justify-center px-12 gap-2 border-black py-10">
                 <h4 className="text-4xl font-semibold">Contact</h4>
                 <div className="pl-4">
                     <a href="mailto:tanelleschutte@gmail.com">tanelleschutte@gmail.com</a><br/>
@@ -29,26 +30,29 @@ const ContactSection = () => {
                     <p>Swellendam 6740</p>
                 </div>
             </div>
-            <div className="w-2/3 flex flex-col border border-black">
-                <div className="h-6/10 flex flex-row gap-2 border border-black p-5">
-                    <form ref={form} onSubmit={sendEmail} className="flex flex-row">
-                        <div className="flex flex-col">
-                            <label>Name</label>
-                            <input type="text" name="user_name" placeholder='*Name' required />
-                            <label>Email</label>
-                            <input type="email" name="user_email" placeholder='*Email' required />
-                            <label>Message</label>
-                            <textarea name="message" placeholder='Your message' required />
+            <div className="lg:w-2/3 w-full flex flex-col border border-black">
+                <div className="h-6/10 flex flex-row gap-5 border border-black p-5 w-full">
+                    <form ref={form} onSubmit={sendEmail} id='contact-form' className="flex md:flex-row flex-col w-full gap-7 items-center flex-center">
+                        <div className="flex flex-col md:w-[50%] w-full gap-5">
+                            <input type="text" name="user_name" placeholder='*Name' required className='p-3 text-gray-950 border border-black' />
+                            <input type="email" name="user_email" placeholder='*Email' required  className='p-3 text-gray-950 border border-black'/>
+                            <textarea name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black' />
                         </div>
-                        <div className="flex flex-col">
-                            <label>Contact number</label>
-                            <input type="tel" name="user_number" />
-                            <label>Interested in</label>
-                            <select name="interested" id="id">
-                                <option value="diet">diet</option>
-                                <option value="gym">gym</option>
+                        <div className="flex flex-col md:w-[50%] w-full gap-5 justify-between">
+                            <input type="tel" name="user_number" placeholder='*Contact number' required className='p-3 text-gray-950 border border-black'/>
+                            <select name="interested" id="id" className="p-3 text-black placeholder-gray-950 border border-black">
+                                <option value="" disabled selected hidden>I'm interested in...</option>
+                                <option value="healthy_eating" className="hover:cursor-pointer">Healthy Eating</option>
+                                <option value="sport_nutrition" className="hover:cursor-pointer">Sport Nutrition</option>
+                                <option value="hchd" className="hover:cursor-pointer">High cholesterol/Hypertension/Diabetes</option>
+                                <option value="weight_loss" className="hover:cursor-pointer">Weight loss</option>
+                                <option value="other" className="hover:cursor-pointer">Other</option>
+                                
                             </select>
-                            <input type="submit" value="Send" />
+                            <div className='w-full h-full flex justify-end items-end'>
+                                <input type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg" />
+                            </div>
+                            
                         </div>
                         
                         
