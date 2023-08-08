@@ -62,7 +62,7 @@ const ContactSection = () => {
                 <div className="h-4/10 flex flex-col gap-2 border border-black p-5">
                     <h5 className="text-xl font-semibold">*Disclaimer</h5>
                     <p>
-                        This is a private practice. I do not submit claims to medical aids on behalf of patients. You are welcome to submit a claim on your own behalf after you’ve paid the consultation fee. Here you ca view a PDF with information on common  medical aid schemes and their respective benefits for dietitian consultations.
+                        This is a private practice. I do not submit claims to medical aids on behalf of patients. You are welcome to submit a claim on your own behalf after you’ve paid the consultation fee.
                     </p>
                 </div>
             </div>
