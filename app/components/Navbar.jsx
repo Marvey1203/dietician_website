@@ -23,6 +23,7 @@ const Navbar = () => {
                 width={350}
                 height={450}
                 alt="Logo"
+                priority
             />
             
             <div className="flex flex-row gap-5 md:gap-10 w-7/10 justify-end">
