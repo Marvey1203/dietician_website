@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const MoreAbout = () => {
     return ( 
         <div className="w-full flex justify-center items-center">
@@ -10,7 +12,13 @@ const MoreAbout = () => {
 
                 </div>
                 <div className="lg:w-[45%] w-full">
-                    <img className="w-full" src="/moreAbout.jpg" alt="Image of Jessie and Tanelle Schutte jogging" />
+                    
+                    <Image
+                        src={"/Jessie.webp"}
+                        width={768}
+                        height={936}
+                        alt="Image of Jessie and Tanelle Schutte jogging"
+                    />
 
                 </div>
             </div>

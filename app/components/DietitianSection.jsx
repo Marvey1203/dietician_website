@@ -1,10 +1,16 @@
+import Image from "next/image";
 import ButtonsConsoltation from "./ButtonConsoltation";
 
 const DietitianSection = () => {
     return ( 
         <div className="w-full flex flex-col justify- items-center">
             <div className="w-full">
-                <img className="w-full" src="/bowlimg.svg" alt="Images of healthy food" />
+                <Image
+                    src={"/foodBowls.webp"}
+                    width={1920}
+                    height={443}
+                    alt="Images of healthy food"
+                />
             </div>
             <div className="w-3/4 py-10 flex flex-col gap-4">
                 <div className="flex flex-col lg:flex-row justify-between gap-4 ">

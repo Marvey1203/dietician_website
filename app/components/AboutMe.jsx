@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutMe = () => {
     return ( 
         <div className="w-full flex flex-col justify-center items-center">
@@ -9,7 +11,12 @@ const AboutMe = () => {
                 </div>
                 <div className="w-full flex lg:flex-row flex-col">
                     <div className="lg:w-[40%] w-full">
-                        <img src="/tanelle.png" alt="Image of Tanelle Schutte" />
+                        <Image
+                            src={"/TanelleSchutte.webp"}
+                            width={595}
+                            height={941}
+                            alt="Image of Tanelle Schutte"
+                        />
                     </div>
                     <div className="lg:w-[60%] w-full flex flex-col md:justify-end md:items-end justify-start items-start gap-5 lg:pl-8 pt-10">
                         <h4 className="font-semibold md:text-6xl text-[35px]">Tanelle Schutte</h4>
