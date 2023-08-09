@@ -7,6 +7,9 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [popUpStatus, setPopUpStatus] = useState(false)
+    const handleClose = () =>{
+        setPopUpStatus(false)
+    }
     const navItems = [
         {
             name: "Health & Nutrition",
@@ -14,19 +17,19 @@ const Navbar = () => {
         },
         {
             name: "About Me",
-            href: "/#"
+            href: "/#about"
         },
         {
             name: "Book a consultation",
-            href: "/#"
+            href: "/#contact"
         },
     ]
     return ( 
-        <div className="w-full flex flex-row justify-between items-center gap-10 py-10">
+        <div className="w-full flex flex-row justify-between items-center lg:gap-10 py-10">
             <Image
                 src="/LogoClinical.webp" 
-                width={350}
-                height={450}
+                width={250}
+                height={150}
                 alt="Logo"
                 priority
             />
@@ -46,7 +49,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 {
-                    popUpStatus && <NavPopUp navItems={navItems} />
+                    popUpStatus && <NavPopUp navItems={navItems} handleClose={handleClose} />
                 }
 
             </div>
