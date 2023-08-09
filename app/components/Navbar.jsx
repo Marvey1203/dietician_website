@@ -1,7 +1,12 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import NavPopUp from "./NavPopUp";
+import { useState } from "react";
+
 
 const Navbar = () => {
+    const [popUpStatus, setPopUpStatus] = useState(false)
     const navItems = [
         {
             name: "Health & Nutrition",
@@ -17,7 +22,7 @@ const Navbar = () => {
         },
     ]
     return ( 
-        <div className="w-full flex flex-col md:flex-row justify-between items-center gap-10 py-10">
+        <div className="w-full flex flex-row justify-between items-center gap-10 py-10">
             <Image
                 src="/LogoClinical.webp" 
                 width={350}
@@ -30,10 +35,18 @@ const Navbar = () => {
                 {
                     navItems.map((value, index) => {
                         return(
-                            <Link className="text-black font-bold text-sm md:text-base" key={index} href={value.href}>{ value.name }</Link>
+                            <Link className="text-black font-bold text-sm md:text-base hidden md:block" key={index} href={value.href}>{ value.name }</Link>
                         )
                         
                     })
+                }
+                <button onClick={() => setPopUpStatus(true)}>
+                    <svg className="w-7 flex md:hidden" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                    </svg>
+                </button>
+                {
+                    popUpStatus && <NavPopUp navItems={navItems} />
                 }
 
             </div>
