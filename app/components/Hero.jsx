@@ -9,6 +9,7 @@ const Hero = () => {
                 priority
                 fill={true}
                 objectFit="cover"
+                alt="Hero background of fruit"
                 
             />
             
