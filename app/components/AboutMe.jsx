@@ -35,7 +35,7 @@ const AboutMe = () => {
                     <div className="lg:w-[80%] w-full h-[2px] bg-black"></div>
                 </div>
                 <p className="text-center text-[17px] md:text-[29px] py-10 font-primary">
-                    WEIGHT MANAGEMENT • INSULIN RESISTANCE • DIABESTES • CHOLOESTEROL MANAGEMENT • HYPERTENSION • CENCER TREATMENT & RECOVERY • RENAL DISORDER • SPORT NUTRITION • PREGANCY & LACTATION • ADULT CIRITICAL CARE & ICU • EATING DISORDERS
+                    WEIGHT MANAGEMENT • INSULIN RESISTANCE • DIABETES • CHOLESTEROL MANAGEMENT • HYPERTENSION • CANCER TREATMENT & RECOVERY • RENAL DISORDERS • SPORT NUTRITION • PREGNANCY & LACTATION • ADULT CRITICAL CARE & ICU • EATING DISORDERS
                 </p>
             
             </div>

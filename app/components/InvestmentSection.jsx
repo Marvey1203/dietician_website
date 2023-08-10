@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const InvestmentSection = () => {
     return ( 
-        <div className="w-full relative pt-14 md:pt-28">
+        <div className="w-full relative pt-12 md:pt-28">
             <Image
                 src={"/Investment.webp"}
                 width={1920}

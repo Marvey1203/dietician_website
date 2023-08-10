@@ -26,7 +26,7 @@ const ContactSection = () => {
                 </div>
                 <h4 className="text-4xl font-semibold">Address</h4>
                 <div className="pl-4">
-                    <p>24 church street</p>
+                    <p>24 Church Street</p>
                     <p>Swellendam 6740</p>
                 </div>
             </div>
