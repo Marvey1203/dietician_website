@@ -1,6 +1,8 @@
 import './globals.css'
 import Navbar from "@/app/components/Navbar"
-import Footer from "@/app/components/Footer"
+import dynamic from 'next/dynamic'
+
+const Footer = dynamic(() => import("@/app/components/Footer"))
 
 
 
