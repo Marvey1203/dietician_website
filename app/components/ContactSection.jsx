@@ -36,7 +36,7 @@ const ContactSection = () => {
                         <div className="flex flex-col md:w-[50%] w-full gap-5">
                             <input type="text" name="user_name" placeholder='*Name' required className='p-3 text-gray-950 border border-black' />
                             <input type="email" name="user_email" placeholder='*Email' required  className='p-3 text-gray-950 border border-black'/>
-                            <textarea name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black' />
+                            <textarea name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black md:block hidden' />
                         </div>
                         <div className="flex flex-col md:w-[50%] w-full gap-5 justify-between">
                             <input type="tel" name="user_number" placeholder='*Contact number' required className='p-3 text-gray-950 border border-black'/>
@@ -49,6 +49,7 @@ const ContactSection = () => {
                                 <option value="other" className="hover:cursor-pointer">Other</option>
                                 
                             </select>
+                            <textarea rows={"5"} name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black md:hidden block ' />
                             <div className='w-full h-full flex justify-end items-end'>
                                 <input type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg" />
                             </div>
