@@ -21,13 +21,13 @@ const ContactSection = () => {
             <div className="flex flex-col border w-full lg:w-1/3 justify-center px-12 gap-2 border-black py-10">
                 <h4 className="text-4xl font-semibold">Contact</h4>
                 <div className="pl-4">
-                    <a href="mailto:tanelleschutte@gmail.com">tanelleschutte@gmail.com</a><br/>
-                    <a href="tel:0825985341">082 598 5341</a>
+                    <a href="mailto:tanelleschutte@gmail.com" className='text-[18px]'>tanelleschutte@gmail.com</a><br/>
+                    <a href="tel:0825985341" className='text-[18px]'>082 598 5341</a>
                 </div>
                 <h4 className="text-4xl font-semibold">Address</h4>
                 <div className="pl-4">
-                    <p>24 Church Street</p>
-                    <p>Swellendam 6740</p>
+                    <p className='text-[18px]'>24 Church Street</p>
+                    <p className='text-[18px]'>Swellendam 6740</p>
                 </div>
             </div>
             <div className="lg:w-2/3 w-full flex flex-col border border-black">
