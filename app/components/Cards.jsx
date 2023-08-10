@@ -37,6 +37,7 @@ const Cards = () => {
                         </div>
                         <div className="flex items-end">
                             <Image
+                                className="w-full"
                                 src={value.img} 
                                 width={500}
                                 height={500}

@@ -50,7 +50,7 @@ const ContactSection = () => {
                                 
                             </select>
                             <textarea rows={"5"} name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black md:hidden block ' />
-                            <div className='w-full h-full flex justify-end items-end'>
+                            <div className='w-full md:h-full flex justify-end items-end'>
                                 <input type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg" />
                             </div>
                             
