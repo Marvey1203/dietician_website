@@ -1,8 +1,10 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import NavPopUp from "./NavPopUp";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+const NavPopUp = dynamic(() => import("./NavPopUp"))
 
 
 const Navbar = () => {

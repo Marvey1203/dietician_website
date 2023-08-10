@@ -1,11 +1,4 @@
-//import HealthNutricion from "./components/HealthNutricion";
 import Hero from "./components/Hero";
-//import ContactSection from "./components/ContactSection";
-//import InvestmentSection from "./components/InvestmentSection";
-//import DietitianSection from "./components/DietitianSection";
-//import AboutMe from "./components/AboutMe";
-//import MissionStatement from "./components/MissionStatement";
-//import MoreAbout from "./components/MoreAbout";
 import dynamic from "next/dynamic";
 
 const HealthNutricion = dynamic(() => import("./components/HealthNutricion"))
