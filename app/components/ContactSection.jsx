@@ -1,8 +1,13 @@
 "use client"
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import FormPopUp from './FormPopUp';
 
 const ContactSection = () => {
+    const [formPopUpStatus, setFormPopUpStatus] = useState(false)
+    const handleFormPopUp = () => {
+        setFormPopUpStatus(false)
+    }
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -11,9 +16,13 @@ const ContactSection = () => {
           .then((result) => {
               console.log(result.text);
               document.getElementById('contact-form').reset()
+              setFormPopUpStatus(true)
           }, (error) => {
               console.log(error.text);
           });
+          setTimeout(() => {
+            setFormPopUpStatus(false)
+          }, 8000);
       };
 
     return ( 
@@ -51,8 +60,11 @@ const ContactSection = () => {
                             </select>
                             <textarea rows={"5"} name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black md:hidden block ' />
                             <div className='w-full md:h-full flex justify-end items-end'>
-                                <input type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg" />
+                                <input type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg hover:font-bold" />
                             </div>
+                            {
+                                formPopUpStatus && <FormPopUp handleFormPopUp={handleFormPopUp}/>
+                            }
                             
                         </div>
                         
