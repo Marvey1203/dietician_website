@@ -10,12 +10,10 @@ const MoreAbout = dynamic(() => import("./components/MoreAbout"))
 const ContactSection = dynamic(() => import("./components/ContactSection"))
 
 export default function Home() {
+ 
   return (
-
-        
-
     <div className="w-full flex flex-col">
-        <Hero />
+        <Hero />        
         <HealthNutricion />
         <InvestmentSection />
         <DietitianSection />

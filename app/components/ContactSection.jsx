@@ -30,6 +30,7 @@ const ContactSection = () => {
             <div className="flex flex-col border w-full lg:w-1/3 justify-center px-12 gap-2 border-black py-10">
                 <h4 className="text-4xl font-semibold">Contact</h4>
                 <div className="pl-4">
+                    <p className="text-[20px] font-primary">Tanelle Schutte</p>
                     <a href="mailto:tanelleschutte@gmail.com" className='text-[20px]'>tanelleschutte@gmail.com</a><br/>
                     <a href="tel:0825985341" className='text-[20px]'>082 598 5341</a>
                 </div>
@@ -47,14 +48,14 @@ const ContactSection = () => {
                             <input type="email" name="user_email" placeholder='*Email' required  className='p-3 text-gray-950 border border-black'/>
                             <textarea name="message" placeholder='Your message' required className='p-3 text-gray-950 border border-black md:block hidden' />
                         </div>
-                        <div className="flex flex-col md:w-[50%] w-full gap-5 justify-between">
+                        <div className="flex flex-col md:w-[50%] w-full h-full gap-5">
                             <input type="tel" name="user_number" placeholder='*Contact number' required className='p-3 text-gray-950 border border-black'/>
                             <select name="interested" id="id" className="p-3 text-black placeholder-gray-950 border border-black">
                                 <option value="" disabled selected hidden>I'm interested in...</option>
                                 <option value="healthy_eating" className="hover:cursor-pointer">Healthy Eating</option>
                                 <option value="sport_nutrition" className="hover:cursor-pointer">Sport Nutrition</option>
-                                <option value="hchd" className="hover:cursor-pointer">High cholesterol/Hypertension/Diabetes</option>
-                                <option value="weight_loss" className="hover:cursor-pointer">Weight loss</option>
+                                <option value="hchd" className="hover:cursor-pointer">High Cholesterol/Hypertension/Diabetes</option>
+                                <option value="weight_loss" className="hover:cursor-pointer">Weight Loss</option>
                                 <option value="other" className="hover:cursor-pointer">Other</option>
                                 
                             </select>
