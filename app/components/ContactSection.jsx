@@ -22,7 +22,7 @@ const ContactSection = () => {
           });
           setTimeout(() => {
             setFormPopUpStatus(false)
-          }, 5000);
+          }, 4000);
       };
 
     return ( 
