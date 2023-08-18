@@ -9,6 +9,9 @@ const Footer = dynamic(() => import("@/app/components/Footer"))
 export const metadata = {
   title: 'Clinical Dietitian',
   description: 'Private practice by Tanelle Schutte',
+  alternates: {
+    canonical: 'https://dietician-website-app.vercel.app/'
+  }
   
 }
 
