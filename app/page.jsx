@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 
 const HealthNutricion = dynamic(() => import("./components/HealthNutricion"))
 const InvestmentSection = dynamic(() => import("./components/InvestmentSection"))
@@ -13,6 +14,17 @@ export default function Home() {
  
   return (
     <div className="w-full flex flex-col">
+      <Head>
+        <meta property="og:title" content="Clinical dietician Swellendam" />
+        <meta
+          property="og:description"
+          content="Tanelle Schutte is a clinical dietician that help you get healthy"
+        />
+        <meta
+          property="og:image"
+          content="/TanelleSchutte.webp"
+        />
+      </Head>
         <Hero />        
         <HealthNutricion />
         <InvestmentSection />
