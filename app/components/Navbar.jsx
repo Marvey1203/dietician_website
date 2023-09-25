@@ -15,15 +15,15 @@ const Navbar = () => {
     const navItems = [
         {
             name: "Health & Nutrition",
-            href: "https://swellendamdietitian.com/#health-nutrition"
+            href: "/#health-nutrition"
         },
         {
             name: "About Me",
-            href: "https://swellendamdietitian.com/#about"
+            href: "/#about"
         },
         {
             name: "Book a consultation",
-            href: "https://swellendamdietitian.com/#contact"
+            href: "/#contact"
         },
     ]
     return ( 
