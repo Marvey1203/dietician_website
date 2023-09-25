@@ -40,7 +40,7 @@ const Navbar = () => {
                 {
                     navItems.map((value, index) => {
                         return(
-                            <Link className="text-black font-semibold text-sm md:text-base hidden md:block" key={index} onClick={e.preventDefault()} href={value.href}>{ value.name }</Link>
+                            <Link className="text-black font-semibold text-sm md:text-base hidden md:block" key={index} onClick={(e) => e.preventDefault()} href={value.href}>{ value.name }</Link>
                         )
                         
                     })
