@@ -28,6 +28,7 @@ const Navbar = () => {
     ]
     return ( 
         <div className="w-full flex flex-row justify-between items-center lg:gap-10 py-10">
+            <Link href={'/'}>
             <Image
                 src="/LogoClinical.webp" 
                 width={250}
@@ -35,12 +36,14 @@ const Navbar = () => {
                 alt="Logo"
                 priority
             />
+            </Link>
+            
             
             <div className="flex flex-row gap-5 md:gap-10 w-7/10 justify-end">
                 {
                     navItems.map((value, index) => {
                         return(
-                            <Link className="text-black font-semibold text-sm md:text-base hidden md:block" key={index}  href={value.href} passHref>
+                            <Link className="text-black font-semibold text-sm md:text-base hidden md:block" key={index}  href={value.href} scroll={false}>
                                 { value.name }
                             </Link>
                         )
