@@ -40,7 +40,9 @@ const Navbar = () => {
                 {
                     navItems.map((value, index) => {
                         return(
-                            <Link className="text-black font-semibold text-sm md:text-base hidden md:block" key={index}  href={value.href}>{ value.name }</Link>
+                            <Link className="text-black font-semibold text-sm md:text-base hidden md:block" key={index}  href={value.href}>
+                                <a>{ value.name }</a>
+                            </Link>
                         )
                         
                     })
