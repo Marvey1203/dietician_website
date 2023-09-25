@@ -13,7 +13,7 @@ const NavPopUp = ({navItems, handleClose}) => {
             {
                     navItems.map((value, index) => {
                         return(
-                            <Link onClick={handleClose} className="text-black font-bold text-lg md:text-base" key={index} href={value.href}>{ value.name }</Link>
+                            <a onClick={handleClose} className="text-black font-bold text-lg md:text-base" key={index} href={value.href}>{ value.name }</a>
                         )
                         
                     })
