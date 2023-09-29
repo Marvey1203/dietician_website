@@ -22,7 +22,7 @@ const AboutMe = () => {
                         <h4 className="font-semibold md:text-6xl text-[35px]">Tanelle Schutte</h4>
                         <h5 className="font-bold md:text-xl text-[14px]">RD (SA) BSC MED HONS, CLIN DIET (US)</h5>
                         <p className="text-[15px] md:text-xl font-primary">
-                            I qualified at the University of Stellenbosch in 1999. After 3 years of student training and lecturing, I started to work at Grootte Schuur Hospital where I was promoted to Principal Dietitian. At this state hospital, I gained valuable experience in critical care, trauma, surgery, cancer treatment, eating disorders and internal medicine. After starting a family, I resigned at the hospital and started to locum at Vergelegen Nutrition Centre, where my focus was on the nutritional management of renal patients, athletes (being an athlete myself) and disordered eating. 
+                            I qualified at the University of Stellenbosch in 1999. After 3 years of student training and lecturing, I started to work at Groote Schuur Hospital where I was promoted to Principal Dietitian. At this state hospital, I gained valuable experience in critical care, trauma, surgery, cancer treatment, eating disorders and internal medicine. After starting a family, I resigned at the hospital and started to locum at Vergelegen Nutrition Centre, where my focus was on the nutritional management of renal patients, athletes (being an athlete myself) and disordered eating. 
                         </p>
                     </div>
                 </div>

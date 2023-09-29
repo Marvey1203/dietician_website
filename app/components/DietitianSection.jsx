@@ -26,7 +26,7 @@ const DietitianSection = () => {
                 Nutritional information can be overwhelming to the public. People are often confused by conflicting and outdated research and information. A qualified dietitian is an expert in the field of nutrition and can assist you with individual science-based guidelines to improve your health and wellbeing. 
                 </p>
                 <p className="md:text-xl text-[15px] font-primary">
-                    Follow-up visits are very important to keep ypu accountable and plays a crucial role in ensuring success with weight loss.
+                    Follow-up visits are very important to keep you accountable and plays a crucial role in ensuring success with weight loss.
                 </p>
                 <div className="w-full flex justify-start py-5">
                     <ButtonsConsoltation/>
