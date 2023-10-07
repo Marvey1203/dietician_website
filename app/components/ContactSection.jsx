@@ -15,8 +15,7 @@ const ContactSection = () => {
         emailjs.sendForm('service_7cyt8sj', 'template_37my3yp', form.current, 'tc2Tj7mW6Wn5QvCV0')
           .then((result) => {
               console.log(result.text);
-              document.getElementById('contact-form').reset()
-              setFormPopUpStatus(true)
+              document.getElementById('contact-form')[0].reset()
           }, (error) => {
               console.log(error.text);
           });
@@ -60,8 +59,8 @@ const ContactSection = () => {
                                 
                             </select>
                             <textarea rows={"5"} name="message" placeholder='Your message'  className='p-3 text-gray-950 border border-black md:hidden block ' />
-                            <div className='w-full md:h-full flex justify-end items-end'>
-                                <input type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg hover:font-bold" />
+                            <div className='w-full md:h-full flex justify-end items-end '>
+                                <input onClick={()=> setFormPopUpStatus(true)} type="submit" value="> Send" className="py-2 px-10 bg-black text-white font-primary text-lg hover:font-bold hover:cursor-pointer" />
                             </div>
                             {
                                 formPopUpStatus && <FormPopUp handleFormPopUp={handleFormPopUp}/>
