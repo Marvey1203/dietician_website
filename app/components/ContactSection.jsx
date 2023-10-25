@@ -12,10 +12,10 @@ const ContactSection = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_7cyt8sj', 'template_37my3yp', form.current, 'tc2Tj7mW6Wn5QvCV0')
+        emailjs.sendForm('service_gvcej1s', 'template_37my3yp', form.current, 'tc2Tj7mW6Wn5QvCV0')
           .then((result) => {
               console.log(result.text);
-              document.getElementById('contact-form')[0].reset()
+              document.getElementById('contact-form').reset()
           }, (error) => {
               console.log(error.text);
           });
